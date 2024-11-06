@@ -1,20 +1,8 @@
 <template>
-  <h1>{{ greeting }}</h1>
-  <button :title="buttonTitle" @click="changeTitle">Click để thay đổi lời chào</button>
+  <h1>Chào mừng đến với VueJS</h1>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      greeting: 'Xin chào bạn!',
-      buttonTitle: 'Nhấn để thay đổi lời chào'
-    };
-  },
-  methods: {
-    changeTitle() {
-      this.greeting = 'Hello, World!';
-      this.buttonTitle = 'Lời chào mới đã được cập nhật';
-    }
-  }
+<style>
+h1 {
+  color: red;
 }
-</script>
+</style>
